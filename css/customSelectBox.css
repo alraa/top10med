@@ -1,0 +1,163 @@
+.customSelect { 
+	color:#282828;
+	cursor:pointer;
+	background:#fff;
+	width:100%;
+	height:40px;
+	z-index:800;
+	text-align:left;
+	font-size:14px;
+	line-height:14px;
+}	
+
+.compare-list__select .customSelect{
+	border: 1px solid #dfdfdf;
+	background: #fff;
+	display: block;
+	height: 40px;
+	color: #333333;
+	font-size: 20px;
+	line-height: 24px;
+}
+
+.customSelect .selectedValue {
+	padding:14px 14px 0;
+	height:42px;
+	box-sizing:border-box;
+	outline:none;
+}
+
+.compare-list__select .customSelect .selectedValue {
+	padding: 7px 22px 7px 12px;
+	height: 39px;
+	white-space: nowrap;
+	overflow: hidden;
+	display: block;
+	text-overflow: ellipsis;
+}
+.compare-list__select .customSelect, .compare-list__select .selectValueWrap, .compare-list__select .customSelect .selectedValue, .compare-list__select {min-width:120px;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);-webkit-tap-highlight-color: transparent;}
+.customSelect .selectList {
+	z-index: 999;
+	position: absolute;
+	left: -999em;
+	top: -999em;
+	background:#fff;
+	margin:8px 0 0;
+	width:100%;
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding;
+	background-clip: padding-box;
+}
+
+.customSelect.select-open .selectList {
+	left: 0 !important;
+	top: auto !important;
+}
+
+.customSelect .selectList dl.defaultScrollbar {
+	overflow-x: hidden;
+	overflow-y: scroll;	
+}
+
+.customSelect dl, .customSelect dd {
+	margin: 0;
+}
+
+.customSelect dd {
+	zoom: 1;
+	cursor: pointer;
+	margin-bottom:1px;
+}
+
+.customSelect .selected,
+html:not(.touchevents) .customSelect .selectList dd:hover{
+	background:#eaf0ec;
+}
+
+.customSelect dd {
+	padding: 8px 10px 8px 14px;
+} 
+
+.customSelect dd:first-child{
+	padding-top:11px;
+	border-radius:3px 3px 0 0;
+}
+
+.customSelect dd:last-child{
+	border-radius:0 0 3px 3px;
+}
+
+.compare-list__select .customSelect dd {
+	padding: 4px 10px 4px 16px;
+	text-decoration:none;
+} 
+
+.compare-list__select .customSelect dd:first-child{
+	border-radius:3px 3px 0 0;
+	padding-top:8px;
+}
+
+.compare-list__select .customSelect dd:last-child{
+	border-radius:0 0 3px 3px;
+	padding-bottom:8px;
+}
+
+.hasJS select.custom {
+	position: absolute;
+	left: -999em;
+}
+
+.customSelect.disabled .selectedValue {
+	border: 1px solid #ccc;
+	color: #ccc;
+	cursor: default;
+}
+
+.customSelect .caret
+{
+	background:url(../img/arrow.png) no-repeat 0 0px;
+	display: block;
+	width: 10px;
+	height: 6px;
+	content: "";
+	z-index:100;
+}
+
+.compare-list__select .customSelect .caret{
+	background-position:0 0;
+}
+
+.customSelect .selectValueWrap .caret {
+	position: absolute;
+	top: 17px;
+	right: 14px;
+	cursor: pointer;
+	z-index:900;
+}
+
+
+.customSelect .jspPane {
+	overflow-x: hidden;
+	width:100% !important;
+}
+
+.customSelect .jspVerticalBar {
+	background: none;
+	width: 5px;
+	right:16px;
+}
+
+.customSelect .jspHorizontalBar {
+	height: 0;
+	overflow: hidden;
+}
+
+.customSelect .jspTrack {
+	background: none;
+	right: 0px;
+}
+
+.customSelect .jspDrag {
+	border-radius:5px;
+	background:#ffcf06;
+}
